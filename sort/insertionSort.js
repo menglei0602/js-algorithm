@@ -1,3 +1,6 @@
+/**
+ * 插入排序
+ */
 Array.prototype.insertionSort = function () {
     for (let i = 1; i < this.length; i += 1) {
         const temp = this[i];

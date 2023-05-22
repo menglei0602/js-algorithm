@@ -1,3 +1,6 @@
+/**
+ * 快速排序
+ */
 Array.prototype.quickSort = function () {
     const rec = (arr) => {
         if (arr.length === 1) { return arr; }

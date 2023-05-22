@@ -1,3 +1,8 @@
+/**
+ * 顺序搜索
+ * @param {* 查找元素} item 
+ * @returns 
+ */
 Array.prototype.sequentialSearch = function (item) {
     for (let i = 0; i < this.length; i += 1) {
         if (this[i] === item) {

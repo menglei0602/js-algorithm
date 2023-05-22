@@ -1,3 +1,8 @@
+/**
+ * 二分搜索
+ * @param {* 查找元素} item 
+ * @returns 
+ */
 Array.prototype.binarySearch = function (item) {
     let low = 0;
     let high = this.length - 1;

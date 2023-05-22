@@ -1,6 +1,9 @@
+/**
+ * 选择排序
+ */
 Array.prototype.selectionSort = function () {
     for (let i = 0; i < this.length - 1; i += 1) {
-        let indexMin = i;
+        let indexMin = i; // 最小值索引
         for (let j = i; j < this.length; j += 1) {
             if (this[j] < this[indexMin]) {
                 indexMin = j;

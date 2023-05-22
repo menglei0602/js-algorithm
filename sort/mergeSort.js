@@ -1,3 +1,6 @@
+/**
+ * 归并排序
+ */
 Array.prototype.mergeSort = function () {
     const rec = (arr) => {
         if (arr.length === 1) { return arr; }

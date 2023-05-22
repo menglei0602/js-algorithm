@@ -1,3 +1,6 @@
+/**
+ * 冒泡排序
+ */
 Array.prototype.bubbleSort = function () {
     for (let i = 0; i < this.length - 1; i += 1) {
         for (let j = 0; j < this.length - 1 - i; j += 1) {
