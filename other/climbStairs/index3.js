@@ -1,4 +1,12 @@
-var climbStairs = function(n) {
+/**
+ * 用矩阵快速幂使时间复杂度：O(logn)，空间复杂度：O(1)。
+    前两种情况适用于n 比较小的情况，在 n 变大之后，O(n) 的时间复杂度会让这个算法看起来有些捉襟见肘。
+    我们可以用「矩阵快速幂」的方法来优化这个过程。
+ * @param {*} n 
+ * @returns 
+ */
+
+ var climbStairs = function(n) {
     const q = [[1, 1], [1, 0]];
     const res = pow(q, n);
     return res[0][0];
@@ -27,4 +35,5 @@ const multiply = (a, b) => {
 }
 
 let num = climbStairs(4);
+
 console.log(num);

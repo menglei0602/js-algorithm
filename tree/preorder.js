@@ -19,3 +19,5 @@ const preorder = (root) => {
 // };
 
 preorder(bt);
+
+console.log('');
