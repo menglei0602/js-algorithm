@@ -1,3 +1,6 @@
+/**
+ * 深度优先搜索
+ */
 const graph = require('./graph');
 
 const visited = new Set();
@@ -12,3 +15,5 @@ const dfs = (n) => {
 };
 
 dfs(2);
+
+console.log(visited);

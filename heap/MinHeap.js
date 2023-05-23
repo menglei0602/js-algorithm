@@ -57,3 +57,5 @@ h.insert(3);
 h.insert(2);
 h.insert(1);
 h.pop();
+
+console.log(h);

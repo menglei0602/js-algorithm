@@ -9,3 +9,5 @@ let p = json;
 path.forEach((k) => {
     p=p[k];
 });
+
+console.log(p);
