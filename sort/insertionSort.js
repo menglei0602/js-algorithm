@@ -3,7 +3,7 @@
  */
 Array.prototype.insertionSort = function () {
     for (let i = 1; i < this.length; i += 1) {
-        const temp = this[i];
+        const temp = this[i]; // 保存当前数据
         let j = i;
         while (j > 0) {
             if (this[j - 1] > temp) {
