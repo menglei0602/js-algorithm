@@ -1,3 +1,6 @@
+const { nanosecondTime } = require('../../common/util');
+const { STAIRS_NUM } = require('./const');
+
 /**
  * 时间复杂度O(n), 空间复杂度O(n)
  * dp[i]：爬到i级台阶的方法数目。注意数组是从0开始的，所以数组大小为n+1
@@ -10,7 +13,6 @@
  * @param {*} n 
  * @returns 
  */
-
 var climbStairs = function (n) {
     if (n <= 0) {
         return 0
@@ -26,7 +28,7 @@ var climbStairs = function (n) {
     }
     return dp[n]
 };
-let num = climbStairs(4);
-
+let num = climbStairs(STAIRS_NUM);
 console.log(num);
+
 

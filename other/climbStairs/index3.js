@@ -1,3 +1,6 @@
+const { nanosecondTime } = require('../../common/util');
+const { STAIRS_NUM } = require('./const');
+
 /**
  * 一种奇技淫巧方式：
  * 用矩阵快速幂使时间复杂度：O(logn)，空间复杂度：O(1)。
@@ -39,6 +42,5 @@ const multiply = (a, b) => {
     return c;
 }
 
-let num = climbStairs(4);
-
+let num = climbStairs(STAIRS_NUM);
 console.log(num);

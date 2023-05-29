@@ -1,3 +1,7 @@
+const {
+    measureTime
+} =  require('./util');
+
 const RANDOM_LENGTH = 1000 * 10;
 /**
  * 随机生成整数数组
@@ -10,19 +14,6 @@ function generateRandomArray(length) {
         arr.push(Math.floor(Math.random() * RANDOM_LENGTH * 10));
     }
     return arr;
-}
-
-/**
- * 记录时间
- * @param {*} func 
- * @param {*} inputData 
- * @returns 
- */
-function measureTime(func, inputData) {
-    const startTime = Date.now();
-    func(inputData);
-    const endTime = Date.now();
-    return endTime - startTime;
 }
 
 // 1、冒泡排序

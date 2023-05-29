@@ -1,3 +1,6 @@
+const { nanosecondTime } = require('../../common/util');
+const { STAIRS_NUM } = require('./const');
+
 /**
  * 时间复杂度O(n), 空间复杂度O(1)
  * 用滚动数组思想把空间复杂度优化成O(1)
@@ -16,6 +19,5 @@ var climbStairs = function(n) {
     return r;
 };
 
-let num = climbStairs(4);
-
+let num = climbStairs(STAIRS_NUM);
 console.log(num);
